@@ -33,6 +33,7 @@ Use a more readable tab size (opinionated).
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
 }
 
 /*
@@ -484,6 +485,7 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
 
 /**
  * Reset form element properties that are easy to forget to
@@ -183895,9 +183897,6 @@ video {
   position: fixed;
   display: flex;
   justify-content: flex-end;
-  align-items: center;
-  padding-right: 30px;
-  font-size: 2em;
   width: 100%;
   height: 60px;
   z-index: 9999;
@@ -186172,11 +186171,17 @@ h1 {
   }
 }
 h2 {
-  color: #9ba6b1;
-  font-size: 2em;
-  text-align: end;
-  font-family: "Open Sans", sans-serif;
+    color: #9ba6b1;
+    font-size: 2em;
+    text-align: end;
+    font-family: "Open Sans", sans-serif;
 }
+h3 {
+    color: #9ba6b1;
+    font-family: "Voces", cursive;
+}
+
+
 
 #AboutMe {
     position: relative;
@@ -186218,6 +186223,9 @@ h2 {
     opacity: 0.4;
 
 }
-
-
+#Contact {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
