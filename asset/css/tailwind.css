@@ -34,6 +34,7 @@ html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   scroll-behavior: smooth;
+
 }
 
 /*
@@ -519,25 +520,6 @@ samp {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-/**
- * Make replaced elements `display: block` by default as that's
- * the behavior you want almost all of the time. Inspired by
- * CSS Remedy, with `svg` added as well.
- *
- * https://github.com/mozdevs/cssremedy/issues/14
- */
-
-img,
-svg,
-video,
-canvas,
-audio,
-iframe,
-embed,
-object {
-  display: block;
-  vertical-align: middle;
-}
 
 /**
  * Constrain images and videos to the parent width and preserve
@@ -186146,6 +186128,21 @@ video {
   z-index: 2;
 }
 
+#AboutMe {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.container-AboutMe {
+  width:80%;
+  margin: auto;
+  height: 100%;
+  display: flex;
+
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #a9b3bd;
+}
 h1 {
   display: flex;
   color: #a9b3bd;
@@ -186154,6 +186151,17 @@ h1 {
   text-shadow: 6px 6px 8px rgba(50, 0, 53, 0.6);
   transform: scale(1);
   animation: pulse 5s infinite linear;
+}
+
+h2 {
+  color: #9ba6b1;
+  font-size: 2em;
+  text-align: end;
+  font-family: "Open Sans", sans-serif;
+}
+h3 {
+  color: #9ba6b1;
+  font-family: "Voces", cursive;
 }
 
 @keyframes pulse {
@@ -186170,34 +186178,6 @@ h1 {
     box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
   }
 }
-h2 {
-    color: #9ba6b1;
-    font-size: 2em;
-    text-align: end;
-    font-family: "Open Sans", sans-serif;
-}
-h3 {
-    color: #9ba6b1;
-    font-family: "Voces", cursive;
-}
-
-
-
-#AboutMe {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-.container-AboutMe {
-    width:80%;
-    margin: auto;
-    height: 100%;
-    display: flex;
-
-    align-items: center;
-    font-family: "Open Sans", sans-serif;
-    color: #a9b3bd;
-}
 
 .arrowUp {
     position: absolute;
@@ -186205,7 +186185,7 @@ h3 {
     height: auto;
     left: 50%;
     top: 10%;
-    z-index:999;
+    z-index:99999;
     filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(243deg) brightness(94%) contrast(90%);
     opacity: 0.4;
 
@@ -186218,14 +186198,27 @@ h3 {
     height: auto;
     left: 50%;
     bottom: 10%;
-    z-index:999;
+    z-index:99999;
     filter: invert(73%) sepia(0%) saturate(0%) hue-rotate(243deg) brightness(94%) contrast(90%);
     opacity: 0.4;
 
 }
-#Contact {
-    position: relative;
-    height: 100vh;
-    width: 100%;
+
+#Skills {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
+#Outils {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+#Contact {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+
 /*# sourceMappingURL=style.css.map */
