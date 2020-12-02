@@ -13,6 +13,12 @@ Use a better box model (opinionated).
 *::before,
 *::after {
   box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 /**
@@ -186143,11 +186149,15 @@ video {
   font-family: "Open Sans", sans-serif;
   color: #a9b3bd;
 }
+.container-AboutMe img{
+  max-width: 100%;
+  max-height: 100%;
+}
 h1 {
   display: flex;
   color: #a9b3bd;
   font-family: "Voces", cursive;
-  font-size: 10rem;
+  font-size: 8vw;
   text-shadow: 6px 6px 8px rgba(50, 0, 53, 0.6);
   transform: scale(1);
   animation: pulse 5s infinite linear;
@@ -186155,7 +186165,7 @@ h1 {
 
 h2 {
   color: #9ba6b1;
-  font-size: 2em;
+  font-size: 2vw;
   text-align: end;
   font-family: "Open Sans", sans-serif;
 }
